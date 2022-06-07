@@ -1,4 +1,5 @@
 // noinspection JSCheckFunctionSignatures,JSUnresolvedVariable
+document.documentElement.classList.toggle("dark-mode", localStorage.getItem("MCProperty-dark-mode") ?? matchMedia("(prefers-color-scheme:dark)").matches)
 
 let data = {};
 const value_list = {};
@@ -952,4 +953,8 @@ function scrollFunction() {
 function scrollToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function toggleDarkMode() {
+    localStorage.setItem("MCProperty-dark-mode", document.documentElement.classList.toggle("dark-mode") ? "true" : "")
 }
