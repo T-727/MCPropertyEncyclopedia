@@ -9,7 +9,7 @@
     <meta name="og:title" content="Minecraft Property Thingy">
     <meta name="og:description" content="A comprehensive repository of information about Minecraft entities.">
     <meta name="og:site_name" content="Entities">
-    <meta name="og:image" content="/assets/favicon/entities.png">
+    <meta name="og:image" content="/entities/favicon.png">
     <meta name="theme-color" content="#389028">
 
     <title>Minecraft Entity Property Thingy</title>
@@ -47,16 +47,14 @@
         gtag('config', 'G-R2CW5GD7WW');
     </script>
 
-    <link rel="icon" href="/assets/favicon/entities.ico">
-
     <!-- Main css/js -->
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
 
     </style>
 </head>
 
-<body data-page="entity" onload="load_data('data/entity_data.json')">
+<body data-page="entity" onload="load_data('/entities/data.json')">
 
     <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -73,19 +71,19 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a class="navbar-item" href="index.html">Blocks</a></li>
+                    <li><a class="navbar-item" href="/blocks">Blocks</a></li>
                     <li role="separator" class="vertical-divider hidden-xs"></li>
                     <li><a class="navbar-item navbar-disabled">Entities</a></li>
                     <li role="separator" class="vertical-divider hidden-xs"></li>
-                    <li><a class="navbar-item" href="items.html">Items</a></li>
+                    <li><a class="navbar-item" href="/items">Items</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li role="separator" class="horizontal-divider visible-xs"></li>
-                    <li><a class="navbar-item" href="discord.html"><i class="fab fa-discord"></i></a></li>
+                    <li><a class="navbar-item" href="discord"><i class="fab fa-discord"></i></a></li>
                     <li role="separator" class="vertical-divider hidden-xs"></li>
                     <li><a class="navbar-item" href="https://github.com/JoakimThorsen/MCPropertyEncyclopedia"><i class="fab fa-github"></i></a></li>
                     <li role="separator" class="vertical-divider hidden-xs"></li>
-                    <li><a class="navbar-item" href="about.html">About</a></li>
+                    <li><a class="navbar-item" href="/">About</a></li>
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -114,7 +112,7 @@
             </div>
             <h2 style="font-size: 24px;">
                 This is an open source project. View the
-                <a href="about.html">about</a>
+                <a href="/">about</a>
                 page for more info.
                 <br>
                 Click the button below to customize your selection:
