@@ -46,7 +46,7 @@ body {
     text-decoration: underline;
 }
 .navbar-nav i.fab:hover {
-    color: #ddd;
+    text-decoration: underline;
 }
 
 .navbar-nav > li > a.navbar-item.navbar-disabled:hover {
